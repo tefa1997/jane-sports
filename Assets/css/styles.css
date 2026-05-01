@@ -1,0 +1,133 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header con Flexbox */
+header {
+  display: flex;
+  flex-direction: column;   /* logo arriba, menú debajo */
+  align-items: center;      /* centra horizontalmente */
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 120px;   /* ajusta tamaño del logo */
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px #00ffcc);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff00ff;
+}
+
+/* Jumbotron */
+#jumbotron {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #00ffcc, #ff00ff);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+#jumbotron h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+#jumbotron button {
+  background: #00ffcc;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#jumbotron button:hover {
+  background: #ff00ff;
+  color: #fff;
+}
+
+/* Catálogo con Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.grid article {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.grid img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  border-top: 2px solid #ff00ff;
+}
+
+footer .social a {
+  color: #00ffcc;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+footer .social a:hover {
+  color: #ff00ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+

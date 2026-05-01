@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <!-- Hace que se adapte a moviles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AUSTEN SPORTS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUSTEN SPORTS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <h1>Mi negocio</h1>
-        <nav>
-            <ul>
-                <li><a href="#jumborton">Inicio</a></li>
-                <li><a href="#Catalogo">Catálogo</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Jumborton -->
-    <!-- Catalogo -->
-<!-- footer -->
+  <!-- Header con Flexbox -->
+  <header>
+    <img src="Assets/css/imagines/colibri.png" alt="AUSTEN SPORTS" class="logo">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">contacto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Usuario</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <!-- Jumbotron -->
+  <section id="jumbotron">
+    <div class="intro">
+      <h1>Ropa Deportiva Colombiana</h1>
+      <p>Diseños auténticos, cómodos y con estilo neón.</p>
+      <form>
+        <input type="email" placeholder="Introduce tu correo">
+        <button type="submit">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Catálogo con Grid -->
+  <main id="catalogo">
+    <h2>Catálogo de Ropa Deportiva</h2>
+    <div class="grid">
+      <article>
+        <img src="img/camiseta.jpg" alt="Camiseta deportiva">
+        <h3>Camiseta Dry-Fit</h3>
+        <p>Transpirable y ligera para entrenar.</p>
+      </article>
+      <article>
+        <img src="img/pantalon.jpg" alt="Pantalón deportivo">
+        <h3>Pantalón Jogger</h3>
+        <p>Comodidad y estilo urbano, fabricado en Colombia.</p>
+      </article>
+      <article>
+        <img src="img/zapatillas.jpg" alt="Zapatillas deportivas">
+        <h3>Zapatillas Running</h3>
+        <p>Amortiguación perfecta para correr en la montaña.</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Sección adicional -->
+  <aside id="extra">
+    <h2>Ofertas Especiales</h2>
+    <p>Hasta 30% de descuento en la nueva colección de AUSTEN SPORTS.</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <p>© 2026 AUSTEN SPORTS</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
 </body>
 </html>
