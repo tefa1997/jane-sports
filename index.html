@@ -7,46 +7,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header con Flexbox -->
+  <!-- Header -->
   <header>
     <img src="Assets/css/imagines/colibri.png" alt="AUSTEN SPORTS" class="logo">
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">contacto</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Usuario</a>
-        </li>
+    <nav>
+      <ul>
+        <li><a href="#jumbotron">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#extra">Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    </nav>
   </header>
 
-  <!-- Jumbotron -->
+  <!-- Jumbotron con carrusel -->
   <section id="jumbotron">
+    <div class="slider">
+      <div class="slides">
+        <img src="img/banner1.jpg" alt="Oferta 1">
+        <img src="img/banner2.jpg" alt="Oferta 2">
+        <img src="img/banner3.jpg" alt="Oferta 3">
+      </div>
+    </div>
     <div class="intro">
-      <h1>Ropa Deportiva Colombiana</h1>
-      <p>Diseños auténticos, cómodos y con estilo neón.</p>
-      <form>
-        <input type="email" placeholder="Introduce tu correo">
-        <button type="submit">Suscribirme</button>
-      </form>
+      <h1>OUTFITS DEPORTIVOS CON HASTA 80% OFF</h1>
+      <p>Liquidación ¡Última oportunidad! Válido hasta agotar existencias.</p>
+      <button>COMPRAR AHORA</button>
     </div>
   </section>
 
-  <!-- Catálogo con Grid -->
+  <!-- Catálogo -->
   <main id="catalogo">
     <h2>Catálogo de Ropa Deportiva</h2>
     <div class="grid">
@@ -68,7 +58,7 @@
     </div>
   </main>
 
-  <!-- Sección adicional -->
+  <!-- Ofertas -->
   <aside id="extra">
     <h2>Ofertas Especiales</h2>
     <p>Hasta 30% de descuento en la nueva colección de AUSTEN SPORTS.</p>
@@ -85,3 +75,4 @@
   </footer>
 </body>
 </html>
+
