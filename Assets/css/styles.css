@@ -40,6 +40,14 @@ nav ul li a:hover { color:#ff00ff; text-shadow:0 0 10px #ff00ff; }
   justify-content: space-between;
   gap: 2rem;
 }
+.jumbotron-images img {
+  width: 100%;
+  max-width: 300px;   /* controla el ancho máximo */
+  aspect-ratio: 16/9; /* proporción rectangular uniforme */
+  object-fit: cover;  /* recorta sin deformar */
+  border-radius: 8px;
+}
+
 #jumbotronCarrusel .jumbotron-text { flex: 1; }
 #jumbotronCarrusel .jumbotron-slider { flex: 1; }
 #jumbotronCarrusel .jumbotron-text h2 {
