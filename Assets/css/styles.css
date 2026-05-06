@@ -3,145 +3,212 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e); /* fondo neón */
-  background-size: cover;
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
   color: #fff;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background: rgba(0,0,0,0.7);
-  border-bottom: 2px solid #00ffcc;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:1rem;
+  background:rgba(0,0,0,0.7);
+  border-bottom:2px solid #00ffcc;
 }
-
 .logo {
-  width: 120px;
-  height: auto;
+  width:120px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  filter:drop-shadow(0 0 15px #00ffcc);
+}
+nav ul { display:flex; gap:1.5rem; list-style:none; }
+nav ul li a { color:#00ffcc; text-decoration:none; font-weight:bold; transition:color 0.3s,text-shadow 0.3s; }
+nav ul li a:hover { color:#ff00ff; text-shadow:0 0 10px #ff00ff; }
+
+/* Jumbotron banners */
+#jumbotronCarrusel {
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 3rem 2rem;
+}
+#jumbotronCarrusel .jumbotron-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#jumbotronCarrusel .jumbotron-text { flex: 1; }
+#jumbotronCarrusel .jumbotron-slider { flex: 1; }
+#jumbotronCarrusel .jumbotron-text h2 {
+  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+#jumbotronCarrusel .newsletter {
+  display: flex;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 15px #00ffcc); /* brillo neón */
 }
-
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
+#jumbotronCarrusel .newsletter input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
 }
-
-nav ul li a {
-  color: #00ffcc; /* enlaces neón */
-  text-decoration: none;
+#jumbotronCarrusel .newsletter button {
+  background: #00ffcc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
   font-weight: bold;
-  transition: color 0.3s, text-shadow 0.3s;
+}
+@media (max-width: 768px) {
+  #jumbotronCarrusel .jumbotron-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  #jumbotronCarrusel .jumbotron-slider img {
+    max-width: 100%;
+  }
 }
 
-nav ul li a:hover {
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
-}
-
-/* Jumbotron con carrusel automático */
-#jumbotron {
-  width: 100%;
-  max-width: 1000px;
-  margin: 2rem auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffcc;
-}
-
-.slider {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  width: 300%; /* 3 imágenes */
-  animation: slide 12s infinite;
-}
-
-.slides img {
-  width: 100%;
+/* Instagram Carrusel */
+.insta-img{
+  width: 14%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
   flex-shrink: 0;
 }
-
-/* Animación carrusel */
-@keyframes slide {
-  0%,30%   { transform: translateX(0); }
-  35%,65%  { transform: translateX(-100%); }
-  70%,100% { transform: translateX(-200%); }
+@media (max-width:600px) {
+  .insta-img { width: 30%; }
 }
-
-/* Catálogo con Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.grid article {
-  background: rgba(255,255,255,0.05);
-  border: 2px solid #00ffcc;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.grid article:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ff00ff;
-}
-
-.grid img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
 /* Footer */
 footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* aplica en vertical */
   align-items: center;
-  background: #111;
-  color: #fff;
-  padding: 1rem 2rem;
-  border-top: 2px solid #ff00ff;
+}
+.instagram-feed, .footer-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: block; /*asegura que se compartan como  bloques */
+}
+/* footer en columnas grid  */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #00ffcc;
 }
 
-footer .social a {
+.footer-col h4 {
   color: #00ffcc;
-  margin-left: 1rem;
-  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a { color: #fff; text-decoration: none; }
+.footer-col ul li a:hover { color: #00ffcc; }
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  color: #aaa;
+}
+/* Colecciones en formato grid */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.producto {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffcc33;
+}
+.producto h3 {
+  color: #00ffcc;
+  margin: 0.5rem 0;
+}
+.producto .precio {
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #ff00ff;
+}
+.tallas span {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tallas span:hover { background: #ff00ff; }
+.colores .color {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0.2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.colores .color:hover { transform: scale(1.2); }
+.carrito {
+  margin-top: 0.5rem;
+  background: #00ffcc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.carrito:hover {
+  background: #ff00ff;
+  color: #fff;
 }
 
-footer .social a:hover {
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
+/* Imágenes de productos estilo Instagram */
+.producto img {
+  width: 100%;          /* ocupa todo el ancho de la tarjeta */
+  aspect-ratio: 1/1;    /* cuadradas como Instagram */
+  object-fit: cover;    /* rellena sin deformar */
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-bottom: 0.5rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  footer {
-    flex-direction: column;
+/* Responsive para colecciones en tablets */
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr 1fr;   /* 2 columnas en tablets */
     gap: 1rem;
   }
+  .producto img {
+    height: 180px;                   /* imágenes más pequeñas */
+  }
 }
 
-
-
-
-
+/* Responsive para colecciones en móviles */
+@media (max-width: 480px) {
+  .productos-grid {
+    grid-template-columns: 1fr;      /* 1 columna en móviles */
+  }
+  .producto img {
+    height: 200px;                   /* todas iguales en móvil */
+    width: 100%;
+    object-fit: cover;
+  }
+  .producto h3 { font-size: 1rem; }
+  .producto p { font-size: 0.9rem; }
+  .precio { font-size: 1rem; }
+  }

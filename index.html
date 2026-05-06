@@ -4,75 +4,538 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AUSTEN SPORTS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Assets/css/styles.css">
+  <!-- font awesone para iconos -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <img src="Assets/css/imagines/colibri.png" alt="AUSTEN SPORTS" class="logo">
+    <img src="Assets/css/imagenes/colibri.png" alt="AUSTEN SPORTS" class="logo">
     <nav>
       <ul>
-        <li><a href="#jumbotron">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#extra">Ofertas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#jumbotronCarrusel">Inicio</a></li>
+        <li><a href="#catalogocarrusel">Catálogo</a></li>
+        <li><a href="#extracarrusel">Ofertas</a></li>
+        <li><a href="#footer">Contacto</a></li>
+        <li><a href="Iniciar sesion">Iniciar sesión</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Jumbotron con carrusel -->
-  <section id="jumbotron">
-    <div class="slider">
-      <div class="slides">
-        <img src="img/banner1.jpg" alt="Oferta 1">
-        <img src="img/banner2.jpg" alt="Oferta 2">
-        <img src="img/banner3.jpg" alt="Oferta 3">
+  <!-- Jumbotron -->
+  <section id="jumbotronCarrusel">
+    <div class="Jumbotron-content">
+    <!--Texto a la izquierda  -->
+    <div class="Jumbotron-text">
+      <h2>20% OFERTAS</h2>
+      <h3>Conoce ropa deportiva en promoción</h3>
+      <p>Comunica tu energía con nuestros outfits deportivos.</p>
+      <p>Si siempre has querido ropa deportiva de calidad, acércate a nosotros</p>
+    <!-- Formulario de correo -->
+     <form class="newsletter">
+      <input type="email" placeholder="Ingresa tu correo">
+      <button type="submit">Enviar</button>
+     </form>
+      <small>Te contactaremos en 24 horas.  
+      Aceptamos todas las tarjetas de crédito y débito.  
+      Conoce nuestros términos y condiciones.<</small>
+    </div>
+    <!-- imagenes a la derecha -->
+     <div class="jumbotron-gird">
+      <div class="Jumbotron-imagenes">
+          <img src="Assets/css/imagenes/kr.webp" alt="Oferta 1">
+          <img src="Assets/css/imagenes/pin.webp" alt="Oferta 2">
+          <img src="Assets/css/imagenes/to.jpg" alt="Oferta 3">
+        </div>
+    </div>
+    </section>
+     
+
+  <!-- Catálogo  con carrusel de productos-->
+  <main id="catalogo">
+   <!-- Colección Invierno hombre -->
+<section class="coleccion">
+  <h2>Colección Invierno ❄️ - Hombre</h2>
+  <div class="productos-grid">
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/sudadera.webp" alt="Sudadera Hombre Invierno">
+      <h3>Sudadera térmica hombre</h3>
+      <p>Protección contra el frío con estilo.</p>
+      <span class="precio">$55</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#e4b53194;"></span>
+        <span class="color" style="background:#bbb;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/camiseta.webp" alt="Camiseta Hombre Invierno">
+      <h3>Camiseta manga larga</h3>
+      <p>Tejido transpirable con protección UV.</p>
+      <span class="precio">$35</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#073d0b;"></span>
+        <span class="color" style="background:#216ca9;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/chaqueta.jpg" alt="Chaqueta deportiva casual Invierno">
+      <h3>Chaqueta deportiva casual</h3>
+      <p>Protección contra el frío con estilo.</p>
+      <span class="precio">$45</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#3c393a;"></span>
+        <span class="color" style="background:#426b7a;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/jogger.webp" alt="Pantalón Jogger Hombre Invierno">
+      <h3>Pantalón Jogger térmico</h3>
+      <p>Comodidad y calor para entrenar.</p>
+      <span class="precio">$45</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#1900ffc2;"></span>
+        <span class="color" style="background:#00ffa279;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+  </div>
+</section>
+
+<!-- Colección Invierno Mujer -->
+<section class="coleccion">
+  <h2>Colección Invierno ❄️ - Mujer</h2>
+  <div class="productos-grid">
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/leggins.webp" alt="Legging Mujer Invierno">
+      <h3>Camiseta Dry-Fit</h3>
+      <p>Transpirable y ligera para entrenar.</p>
+      <span class="precio">$25</span>
+      <div class="tallas">
+        <span>S</span><span>M</span><span>L</span><span>XL</span>
+      </div>
+      <div class="colores">
+        <span class="color" style="background:aquamarine;"></span>
+        <span class="color" style="background:black;"></span>
+        <span class="color" style="background:blueviolet;"></span>
+        <span class="color" style="background:beige;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/sudaderas.webp" alt="Sudadera Invierno Mujer">
+      <h3>Sudadera deportiva mujer</h3>
+      <p>Protección contra el frío con estilo.</p>
+      <span class="precio">$55.00</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/termica mujer.webp" alt="Camiseta Invierno Mujer">
+      <h3>Camiseta manga larga mujer</h3>
+      <p>Tejido transpirable con protección UV.</p>
+      <span class="precio">$35.00</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00bfff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/chaqueta mujer.webp" alt="Chaqueta Invierno Mujer">
+      <h3>Chaqueta deportiva mujer</h3>
+      <p>Diseño moderno y cálido.</p>
+      <span class="precio">$60.00</span>
+<div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+      <div class="colores">
+        <span class="color" style="background:#ff00ff;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background-color: #1900ff3c;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+  </div>
+</section>
+ <!-- Colección Verano Hombre -->
+<section class="coleccion">
+  <h2>Colección Verano ☀️ - Hombre</h2>
+  <div class="productos-grid">
+    
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/short.webp" alt="Short Hombre Verano">
+      <h3>Short deportivo</h3>
+      <p>Ligero y fresco para entrenar, fabricado en Colombia.</p>
+      <span class="precio">$40</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+      <div class="colores">
+        <span class="color" style="background:aquamarine;"></span>
+        <span class="color" style="background:black;"></span>
+        <span class="color" style="background:blueviolet;"></span>
+        <span class="color" style="background:beige;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/camiseta verano.webp" alt="Camiseta Hombre Verano">
+      <h3>Camiseta Dry-Fit</h3>
+      <p>Transpirable y ligera para entrenar bajo el sol.</p>
+      <span class="precio">$25</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#ff00ff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/than.webp" alt="Tank Top Hombre Verano">
+      <h3>Tank Top deportivo</h3>
+      <p>Comodidad y estilo para entrenar al aire libre.</p>
+      <span class="precio">$30</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00bfff;"></span>
+        <span class="color" style="background:#ffcc00;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/zap ver.webp" alt="Zapatos Hombre Verano">
+      <h3>Zapatillas deportivas verano</h3>
+      <p>Diseño ligero y transpirable para correr.</p>
+      <span class="precio">$60</span>
+      <div class="tallas"><span>39</span><span>40</span><span>41</span><span>42</span></div>
+      <div class="colores">
+        <span class="color" style="background:#ff00ff;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#111;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+  </div>
+</section>
+
+      <!-- Colección Verano Mujer -->
+<section class="coleccion">
+  <h2>Colección Verano ☀️ - Mujer</h2>
+  <div class="productos-grid">
+    
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/top.webp" alt="Top Mujer Verano">
+      <h3>Top deportivo mujer</h3>
+      <p>Estilo y frescura para el verano.</p>
+      <span class="precio">$20.00</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#ff00ff;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/s mujer.webp" alt="Short Mujer Verano">
+      <h3>Short deportivo mujer</h3>
+      <p>Ligero y cómodo para entrenar al aire libre.</p>
+      <span class="precio">$25.00</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+      <div class="colores">
+        <span class="color" style="background:aquamarine;"></span>
+        <span class="color" style="background:black;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/zap mujer.webp" alt="Zapatillas Mujer Verano">
+      <h3>Zapatillas deportivas mujer</h3>
+      <p>Diseño transpirable y ligero para correr.</p>
+      <span class="precio">$55.00</span>
+      <div class="tallas"><span>36</span><span>37</span><span>38</span><span>39</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00bfff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/vestido.webp" alt="Vestido deportivo Mujer Verano">
+      <h3>Vestido deportivo mujer</h3>
+      <p>Comodidad y estilo para tus entrenamientos.</p>
+      <span class="precio">$30.00</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#151515;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+  </div>
+</section>
+
+      <!-- Colección Zapatos Deportivos verano e invierno - Hombre y Mujer -->
+<section class="coleccion">
+  <h2>Colección Zapatos Deportivos ☀️❄️ - Hombre y Mujer</h2>
+  <div class="productos-grid">
+    
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/running.webp" alt="Zapatillas Running">
+      <h3>Zapatillas Running</h3>
+      <p>Amortiguación perfecta para correr en la montaña.</p>
+      <span class="precio">$60</span>
+      <div class="tallas"><span>38</span><span>39</span><span>40</span><span>41</span></div>
+      <div class="colores">
+        <span class="color" style="background:aquamarine;"></span>
+        <span class="color" style="background:black;"></span>
+        <span class="color" style="background:blueviolet;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/trail.webp" alt="Zapatillas Trail">
+      <h3>Zapatillas Trail</h3>
+      <p>Estabilidad y soporte para entrenamientos intensos.</p>
+      <span class="precio">$55</span>
+      <div class="tallas"><span>36</span><span>37</span><span>38</span><span>39</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#ff00ff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/casual.webp" alt="Zapatillas Casual">
+      <h3>Zapatillas Casual Deportivas</h3>
+      <p>Diseño versátil para uso diario y deportivo.</p>
+      <span class="precio">$50</span>
+      <div class="tallas"><span>37</span><span>38</span><span>39</span><span>40</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00bfff;"></span>
+        <span class="color" style="background:#ffcc00;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/gym.webp" alt="Zapatillas Gym">
+      <h3>Zapatillas Gym</h3>
+      <p>Ligereza y agarre para entrenamientos en interiores.</p>
+      <span class="precio">$65</span>
+      <div class="tallas"><span>39</span><span>40</span><span>41</span><span>42</span></div>
+      <div class="colores">
+        <span class="color" style="background:#ff00ff;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+        <span class="color" style="background:#111;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+  </div>
+</section>
+<!-- Unidades Limitadas -->
+<section class="coleccion">
+  <h2>Unidades Limitadas con Descuento 🔥</h2>
+  <div class="productos-grid">
+    
+    <!-- producto 1 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/outfit.webp" alt="Outfit deportivo">
+      <h3>Outfit deportivo completo</h3>
+      <p>Descuento especial - ¡últimas unidades!</p>
+      <span class="precio">$39.99</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 2 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/conjunto deportivo.webp" alt="Conjunto deportivo mujer">
+      <h3>Conjunto deportivo mujer</h3>
+      <p>Descuento especial - ¡últimas unidades!</p>
+      <span class="precio">$40</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 3 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/shoes.webp" alt="Zapatillas edición limitada">
+      <h3>Zapatillas edición limitada</h3>
+      <p>Modelo exclusivo con 30% de descuento.</p>
+      <span class="precio">$55</span>
+      <div class="tallas"><span>38</span><span>39</span><span>40</span></div>
+      <div class="colores">
+        <span class="color" style="background:#111;"></span>
+        <span class="color" style="background:#ff00ff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 4 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/enterizo.webp" alt="Enterizo edición limitada">
+      <h3>Enterizo deportiva limitada</h3>
+      <p>Diseño moderno con 25% OFF.</p>
+      <span class="precio">$48</span>
+      <div class="tallas"><span>M</span><span>L</span><span>XL</span></div>
+      <div class="colores">
+        <span class="color" style="background:#426b7a;"></span>
+        <span class="color" style="background:#00ffcc;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+    <!-- producto 5 -->
+    <article class="producto">
+      <img src="Assets/css/imagenes/neon.webp" alt="Leggings edición limitada">
+      <h3>Leggings deportivos edición limitada</h3>
+      <p>Comodidad y estilo con 35% OFF.</p>
+      <span class="precio">$28</span>
+      <div class="tallas"><span>S</span><span>M</span><span>L</span></div>
+      <div class="colores">
+        <span class="color" style="background:#222;"></span>
+        <span class="color" style="background:#00bfff;"></span>
+      </div>
+      <button class="carrito">Agregar al carrito</button>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="Footer">
+  <div class="instagram-feed">
+    <h4>Síguenos en Instagram</h4>
+    <div id="instagramCarrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Grupo unico en una sola fila -->
+        <div class="carousel-item active">
+          <div class="insta-grid">
+            <img src="Assets/css/imagenes/gymwear.webp" class="insta-img" alt="Promo 1">
+            <img src="Assets/css/imagenes/kprochs.webp" class="insta-img" alt="Promo 2">
+            <img src="Assets/css/imagenes/ropa.png" class="insta-img" alt="Promo 3">
+            <img src="Assets/css/imagenes/coleccion.jpg" class="insta-img" alt="Promo 4">
+            <img src="Assets/css/imagenes/h.webp" class="insta-img" alt="Promo 5">
+            <img src="Assets/css/imagenes/morado.webp" class="insta-img" alt="Promo 6">
+            <img src="Assets/css/imagenes/alpha.webp" class="insta-img" alt="Promo 7">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="intro">
-      <h1>OUTFITS DEPORTIVOS CON HASTA 80% OFF</h1>
-      <p>Liquidación ¡Última oportunidad! Válido hasta agotar existencias.</p>
-      <button>COMPRAR AHORA</button>
+  </div>
+
+  <!-- columnas del footer -->
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Catálogo</h4>
+      <ul>
+        <li><a href="#">Ropa deportiva</a></li>
+        <li><a href="#">Zapatos</a></li>
+        <li><a href="#">Accesorios</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- Catálogo -->
-  <main id="catalogo">
-    <h2>Catálogo de Ropa Deportiva</h2>
-    <div class="grid">
-      <article>
-        <img src="img/camiseta.jpg" alt="Camiseta deportiva">
-        <h3>Camiseta Dry-Fit</h3>
-        <p>Transpirable y ligera para entrenar.</p>
-      </article>
-      <article>
-        <img src="img/pantalon.jpg" alt="Pantalón deportivo">
-        <h3>Pantalón Jogger</h3>
-        <p>Comodidad y estilo urbano, fabricado en Colombia.</p>
-      </article>
-      <article>
-        <img src="img/zapatillas.jpg" alt="Zapatillas deportivas">
-        <h3>Zapatillas Running</h3>
-        <p>Amortiguación perfecta para correr en la montaña.</p>
-      </article>
+    <div class="footer-col">
+      <h4>Soporte</h4>
+      <ul>
+<li><a href="#">Precios y cotizaciones</a></li>
+        <li><a href="#">Guías de tallas</a></li>
+        <li><a href="#">Política de envíos</a></li>
+      </ul>
     </div>
-  </main>
-
-  <!-- Ofertas -->
-  <aside id="extra">
-    <h2>Ofertas Especiales</h2>
-    <p>Hasta 30% de descuento en la nueva colección de AUSTEN SPORTS.</p>
-  </aside>
-
-  <!-- Footer -->
-  <footer id="contacto">
-    <p>© 2026 AUSTEN SPORTS</p>
-    <div class="social">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
+    <div class="footer-col">
+      <h4>Nosotros</h4>
+      <ul>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Prensa</a></li>
+      </ul>
     </div>
-  </footer>
-</body>
-</html>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+        </ul>
+    </div>
+    </div>
+    
 
+  <!-- Redes sociales y correo -->
+  <div class="social">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  </div>
+  <div class="contact-email">
+    <p>Contáctanos: 
+      <a href="mailto:deportiva.colombia@hotmail.com">SportsAusten.colombia@hotmail.com</a> | 
+      <a href="mailto:deportiva.colombia@gmail.com">SportsAusten.colombia@gmail.com</a>
+ </p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 AUSTEN SPORTS - Ropa deportiva hecha en Colombia 🇨🇴</p>
+  </div>
